@@ -114,3 +114,9 @@ schema.sql                  MySQL tables
 - One lane per approach and two signal phases; no turning movements, pedestrians or multiple junctions.
 - Simulated input only; real sensor integration is future scope.
 - Webster and the saturation flow constant are tuned to this simulator.
+
+  ## Configuration
+
+The app reads its settings from `config.properties` in the project's main folder.
+Edit it to set your MySQL username and password. If MySQL isn't available,
+the app falls back to saving data in CSV files (in the `data` folder).
